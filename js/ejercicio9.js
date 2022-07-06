@@ -1,6 +1,24 @@
 //Escribe un programa que pida una frase y escriba las vocales que aparecen. Tener en cuenta la función length substring charAt
-//SOLO CON IF (SIN CICLO FOR):
-let frase1 = prompt("Ingrese una frase de máximo 20 caractéres");
+
+//SOLUCION CON CICLO FOR:
+let frase = prompt("Ingrese una frase");
+let vocales = "aeiouáéíóúöü";
+let vocal = "";
+let contador = 0;
+
+for (i = 0; i <= frase.length; i++) {
+    if (vocales.includes(frase.toLowerCase().charAt(i))) {
+        vocal = vocal + frase.charAt(i);
+        contador++;
+    }
+}
+
+document.write("Las vocales en la frase son: " + vocales + "<br>");
+document.write("Son " + (contador - 1) + " vocales.");
+
+/*
+//SOLUCION SOLO CON IF (SIN CICLO FOR):
+let frase1 = prompt("Ingrese una frase");
 let a = "a";
 let e = "e";
 let i = "i";
@@ -44,23 +62,7 @@ if (frase1.toLowerCase().includes(U)) {
 }
 
 /*
-// CON CICLO FOR:
-let frase = prompt("Ingrese una frase");
-let vocales = "aeiouáéíóúöü";
-let vocal = "";
-let contador = 0;
-
-for (i = 0; i <= frase.length; i++) {
-    if (vocales.includes(frase.toLowerCase().charAt(i))) {
-        vocal = vocal + frase.charAt(i);
-        contador++;
-    }
-}
-
-document.write("Las vocales en la frase son: " + vocales + "<br>");
-document.write("Son " + (contador - 1) + " vocales.");
-*/
-/*
+// OTRAS SOLUCIONES CON CICLO FOR:
 //   ***2DO MODO ***
 let vocales = 0;
 let voc = "";
