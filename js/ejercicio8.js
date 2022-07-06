@@ -1,4 +1,4 @@
-//Escribe un programa que pida un numero y diga si es divisible por 2:
+//Escribe un programa que pida un número y diga si es divisible por 2:
 let numero1 = parseInt(prompt("Ingrese un primer numero"));
 
 if (numero1 % 2 === 0) {

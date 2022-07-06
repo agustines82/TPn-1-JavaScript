@@ -1,3 +1,4 @@
+//Añadir al ejercicio anterior que nos diga por cuál de los 4 es divisible (hay que decir todos por los que es divisible).
 let numero1 = parseInt(prompt("Ingrese un numero"));
 
 if (numero1 % 2 === 0) {
