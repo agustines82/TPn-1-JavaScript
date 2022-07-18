@@ -5,9 +5,11 @@ let numero3 = parseInt(prompt("Ingrese un tercer numero"));
 
 if (numero1 >= numero2 && numero2 >= numero3) {
     document.write("El mayor número es: " + numero1);
+} else if (numero1 <= numero2 && numero2 <= numero3) {
+    document.write("El mayor número es: " + numero3);
 } else {
-    if (numero1 <= numero2 && numero2 <= numero3) {
-        document.write("El mayor número es: " + numero3);
+    if (numero2 >= numero1 && numero2 >= numero3) {
+        document.write("El mayor número es: " + numero2);
     }
 }
 
