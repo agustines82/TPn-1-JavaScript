@@ -13,7 +13,7 @@ for (i = 0; i <= frase.length; i++) {
     }
 }
 
-document.write("Las vocales en la frase son: " + vocales + "<br>");
+document.write("Las vocales en la frase son: " + vocal + "<br>");
 document.write("Son " + (contador - 1) + " vocales.");
 
 /*
